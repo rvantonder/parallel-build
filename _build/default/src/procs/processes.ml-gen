@@ -1,0 +1,8 @@
+(** @canonical Processes.Hack_bucket *)
+module Hack_bucket = Processes__Hack_bucket
+
+(** @canonical Processes.MultiWorker *)
+module MultiWorker = Processes__MultiWorker
+
+(** @canonical Processes.Worker *)
+module Worker = Processes__Worker

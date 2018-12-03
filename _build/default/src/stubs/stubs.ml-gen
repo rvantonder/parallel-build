@@ -1,0 +1,2 @@
+(** @canonical Stubs.EventLogger *)
+module EventLogger = Stubs__EventLogger

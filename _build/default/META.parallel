@@ -1,0 +1,160 @@
+version = ""
+description = ""
+requires = "core parallel.memory parallel.scheduler str"
+archive(byte) = "parallel.cma"
+archive(native) = "parallel.cmxa"
+plugin(byte) = "parallel.cma"
+plugin(native) = "parallel.cmxs"
+package "collections" (
+  directory = "collections"
+  version = ""
+  description = ""
+  requires = ""
+  archive(byte) = "collections.cma"
+  archive(native) = "collections.cmxa"
+  plugin(byte) = "collections.cma"
+  plugin(native) = "collections.cmxs"
+)
+package "disk" (
+  directory = "disk"
+  version = ""
+  description = ""
+  requires = "core parallel.collections parallel.injector_config"
+  archive(byte) = "disk.cma"
+  archive(native) = "disk.cmxa"
+  plugin(byte) = "disk.cma"
+  plugin(native) = "disk.cmxs"
+)
+package "hack_core" (
+  directory = "hack_core"
+  version = ""
+  description = ""
+  requires = ""
+  archive(byte) = "hack_core.cma"
+  archive(native) = "hack_core.cmxa"
+  plugin(byte) = "hack_core.cma"
+  plugin(native) = "hack_core.cmxs"
+)
+package "heap" (
+  directory = "heap"
+  version = ""
+  description = ""
+  requires = "parallel.hack_core parallel.stubs parallel.utilities"
+  archive(byte) = "heap.cma"
+  archive(native) = "heap.cmxa"
+  plugin(byte) = "heap.cma"
+  plugin(native) = "heap.cmxs"
+)
+package "hh_json" (
+  directory = "hh_json"
+  version = ""
+  description = ""
+  requires = "core parallel.hack_core"
+  archive(byte) = "hh_json.cma"
+  archive(native) = "hh_json.cmxa"
+  plugin(byte) = "hh_json.cma"
+  plugin(native) = "hh_json.cmxs"
+)
+package "injector_config" (
+  directory = "injector_config"
+  version = ""
+  description = ""
+  requires = "core"
+  archive(byte) = "injector_config.cma"
+  archive(native) = "injector_config.cmxa"
+  plugin(byte) = "injector_config.cma"
+  plugin(native) = "injector_config.cmxs"
+)
+package "interface" (
+  directory = "interface"
+  version = ""
+  description = ""
+  requires = "core parallel.heap parallel.processes parallel.utilities"
+  archive(byte) = "interface.cma"
+  archive(native) = "interface.cmxa"
+  plugin(byte) = "interface.cma"
+  plugin(native) = "interface.cmxs"
+)
+package "memory" (
+  directory = "memory"
+  version = ""
+  description = ""
+  requires = "core
+              parallel.interface
+              ppx_compare.runtime-lib
+              ppx_deriving.runtime
+              ppx_hash.runtime-lib
+              ppx_sexp_conv.runtime-lib
+              ppxlib
+              sexplib"
+  archive(byte) = "memory.cma"
+  archive(native) = "memory.cmxa"
+  plugin(byte) = "memory.cma"
+  plugin(native) = "memory.cmxs"
+)
+package "processes" (
+  directory = "processes"
+  version = ""
+  description = ""
+  requires = "parallel.hack_core
+              parallel.heap
+              parallel.stubs
+              parallel.utilities"
+  archive(byte) = "processes.cma"
+  archive(native) = "processes.cmxa"
+  plugin(byte) = "processes.cma"
+  plugin(native) = "processes.cmxs"
+)
+package "scheduler" (
+  directory = "scheduler"
+  version = ""
+  description = ""
+  requires = "core
+              parallel.interface
+              parallel.memory
+              ppx_compare.runtime-lib
+              ppx_deriving.runtime
+              ppx_hash.runtime-lib
+              ppx_sexp_conv.runtime-lib
+              ppxlib
+              sexplib"
+  archive(byte) = "scheduler.cma"
+  archive(native) = "scheduler.cmxa"
+  plugin(byte) = "scheduler.cma"
+  plugin(native) = "scheduler.cmxs"
+)
+package "socket" (
+  directory = "socket"
+  version = ""
+  description = ""
+  requires = "parallel.utilities"
+  archive(byte) = "socket.cma"
+  archive(native) = "socket.cmxa"
+  plugin(byte) = "socket.cma"
+  plugin(native) = "socket.cmxs"
+)
+package "stubs" (
+  directory = "stubs"
+  version = ""
+  description = ""
+  requires = "core"
+  archive(byte) = "stubs.cma"
+  archive(native) = "stubs.cmxa"
+  plugin(byte) = "stubs.cma"
+  plugin(native) = "stubs.cmxs"
+)
+package "utilities" (
+  directory = "utilities"
+  version = ""
+  description = ""
+  requires = "parallel.collections
+              parallel.disk
+              parallel.hack_core
+              parallel.hh_json
+              parallel.injector_config
+              str"
+  archive(byte) = "utilities.cma"
+  archive(native) = "utilities.cmxa"
+  plugin(byte) = "utilities.cma"
+  plugin(native) = "utilities.cmxs"
+)

@@ -1,0 +1,11 @@
+(** @canonical Disk.Disk *)
+module Disk = Disk
+
+(** @canonical Disk.Disk_sig *)
+module Disk_sig = Disk__Disk_sig
+
+(** @canonical Disk.RealDisk *)
+module RealDisk = Disk__RealDisk
+
+(** @canonical Disk.TestDisk *)
+module TestDisk = Disk__TestDisk

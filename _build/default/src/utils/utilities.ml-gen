@@ -1,0 +1,50 @@
+(** @canonical Utilities.Daemon *)
+module Daemon = Utilities__Daemon
+
+(** @canonical Utilities.Exit_status *)
+module Exit_status = Utilities__Exit_status
+
+(** @canonical Utilities.Fork *)
+module Fork = Utilities__Fork
+
+(** @canonical Utilities.Hack_core *)
+module Hack_core = Utilities__Hack_core
+
+(** @canonical Utilities.Hack_path *)
+module Hack_path = Utilities__Hack_path
+
+(** @canonical Utilities.Handle *)
+module Handle = Utilities__Handle
+
+(** @canonical Utilities.Hh_logger *)
+module Hh_logger = Utilities__Hh_logger
+
+(** @canonical Utilities.Lock *)
+module Lock = Utilities__Lock
+
+(** @canonical Utilities.Marshal_tools *)
+module Marshal_tools = Utilities__Marshal_tools
+
+(** @canonical Utilities.Measure *)
+module Measure = Utilities__Measure
+
+(** @canonical Utilities.PidLog *)
+module PidLog = Utilities__PidLog
+
+(** @canonical Utilities.PrintSignal *)
+module PrintSignal = Utilities__PrintSignal
+
+(** @canonical Utilities.Stats *)
+module Stats = Utilities__Stats
+
+(** @canonical Utilities.String_utils *)
+module String_utils = Utilities__String_utils
+
+(** @canonical Utilities.Sys_utils *)
+module Sys_utils = Utilities__Sys_utils
+
+(** @canonical Utilities.Timeout *)
+module Timeout = Utilities__Timeout
+
+(** @canonical Utilities.Utils *)
+module Utils = Utilities__Utils
